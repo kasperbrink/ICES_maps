@@ -15,7 +15,6 @@ iok <-
     b=(list(licens='1040 / 1140',art='Blåhvilling færøsk zone',name='BLH2X12F', c('49E4','49E1','49E0','59E7','57E7','58E7'))),
     c=(list(licens='1028 / 1128',art='Brisling Skagerrak og Kattegat',name='BRS03A.',c('44G0','43G0','44G1','41G1','43G1','42G1','41G0','42G0','41G2'))),
     d=(list(licens='1029 / 1129',art='Brisling Østersøen',name='BRS3BCD-C',c('46H0','40G8','45G9','46G9','42G9','45H0','41G9','40G0','39G0','42G8'))),
-    
     e=(list(licens='1027 / 1127',art='Brisling Nordsøen',name='BRSIOK',c('37F7','39F6','40F5','38F4','35F3','37F3','37F4','39F5','36F3','36F4'))),
     f=(list(licens='1043 / 1143',art='Havgalt EU og Int. Zone',name='HAG678-',c('25E1','24E2','25E2','26E1','40E0','46E2','23E3','36D8'))),
     g=(list(licens='1041 / 1141',art='Hestamkrel i Kanalen og vestlige farv.',name='HMK578/14',c('46E2','40E0','43E0','44E0','37D9','41E0','42E0','24E2','36D8','35D7'))),
