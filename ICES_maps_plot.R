@@ -7,7 +7,7 @@ library(leaflet)
 library(htmlwidgets)
 library(mapview)
 
-ices <-readOGR("T:\\kasbri\\Shapefiles\\ices_rectangles\\ices_rectangles.shp")
+ices <- rgdal::readOGR("data/ICES_Statistical_Rectangles_Eco.shp")
 
 iok <-
   list(
@@ -36,7 +36,7 @@ iok <-
 
 col=rainbow(length(iok))
 
-m <- get_map(c(lon = 3, lat = 62), zoom = 4, color = 'bw')
+m <- ggmap::get_map(c(lon = 3, lat = 62), zoom = 4, color = 'bw')
 
 
 for (i in 1:length(iok)) {
