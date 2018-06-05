@@ -41,7 +41,7 @@ m <- ggmap::get_map(c(lon = 3, lat = 62), zoom = 4, color = 'bw')
 
 for (i in 1:length(iok)) {
   ices_s <- subset(ices, ICESNAME %in% iok[[i]]$ices)
-  ices_s1 <- fortify(ices_s)
+  ices_s1 <- ggmap::fortify(ices_s)
   print(
     ggmap(m) + geom_polygon(
       aes(x = long, y = lat, group = group),
