@@ -33,7 +33,7 @@ iok <-
   )
 
 
-
+library(tidyverse)
 col=rainbow(length(iok))
 
 m <- ggmap::get_map(c(lon = 3, lat = 62), zoom = 4, color = 'bw')
@@ -41,9 +41,9 @@ m <- ggmap::get_map(c(lon = 3, lat = 62), zoom = 4, color = 'bw')
 
 for (i in 1:length(iok)) {
   ices_s <- subset(ices, ICESNAME %in% iok[[i]]$ices)
-  ices_s1 <- ggmap::fortify(ices_s)
+  ices_s1 <- ggplot2::fortify(ices_s)
   print(
-    ggmap(m) + geom_polygon(
+    ggmap::ggmap(m) + ggplot2::geom_polygon(
       aes(x = long, y = lat, group = group),
       fill = col[i],
       size = .3,
